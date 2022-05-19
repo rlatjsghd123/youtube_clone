@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Sunflower', sans-serif;
+}
+
+button,
+button:focus{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color:transparent;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+header .logo i{
+    color: red;
+    font-size: 24px;
+}
+
+header .logo{
+    font-size: 24px;
+    padding: 8px 16px;
+    color: white;
+}
+
+header .icons{
+    color: white;
+    padding: 10px 16px;
+}
+.player{
+    text-align: center;
+    background-color: black;
+}
+
+.player video{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+}
+.info{
+    padding: 0 15px;
+}
+
+.info .hashtag{
+    color: blue;
+    font-size: 13px;
+    list-style: none;
+    display: flex;
+    padding: 10px 5px;
+}
+
+.hashtag li{
+    padding: 0 5px;
+}
+
+.title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.info .views{
+    font-size: 5px;
+    color: gray;
+}
+
+.info .titleAndButton{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info .actionBtn{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+.info .actionBtn button{
+    display: flex;
+    flex-direction: column;
+    color: gray;
+}
+
+.info .actionBtn button i {
+    margin: 0 auto;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+.info .actionBtn button i.active{
+    color: blue;
+}
+
+
+.info .channel{
+    border-top: 1px solid rgb(191, 182, 182);
+    border-bottom: 1px solid rgb(191, 182, 182);
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.info .channel .matadata{
+    display: flex;
+}
+.info .channel .matadata .info{
+    display: flex;
+    flex-direction: column;    
+}
+.info .channel .matadata .info .name{
+    font-size: 16px;
+    font-weight: bold;
+}
+.info .channel .matadata .info .sub{
+    font-size: 11px;
+    color: gray;
+}
+
+.info .channel .matadata img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.info .channel .uppercase{
+    text-transform: uppercase;
+}
+.upNext {
+    padding: 0 15px;
+    margin-top: 10px
+}
+
+.upNext .title{
+    margin-bottom:8px;
+    color: gray;
+    font-size: 12px;
+}
+.upNext .item{
+    display: flex;
+}
+.upNext .item .info{
+ flex: 1 1 60%;
+ display: flex;
+ flex-direction: column;
+}
+.upNext .item .img img{
+    width: 100%;
+}
+.upNext .item .img{
+ flex: 1 1 35%;
+}
+.upNext .item .more{
+ flex: 1 1 5%
+}
+.infoAndUpNext{
+    display: flex;
+    flex-direction: column;       
+}
+@media screen and  (min-width:768px){
+    .infoAndUpNext{
+        display: flex;
+        flex-direction: row;       
+    }
+}
+
+
+
+
+
+
